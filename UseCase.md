@@ -1,4 +1,4 @@
-Specification of Use Case
+## Specification of Use Case
 P2P
 
 Our goal is to create a platform (DApp) where players can bet against each other without a centralized provider demanding a commission in between. The type of bets we offer are “back”- and “lay”-bets. (https://www.livetipsportal.com/en/betting-strategies/back-lay/). The players have the possibility to back or to lay a bet which allows them to either offer a bet to other players or to accept a bet another player has offered. 
