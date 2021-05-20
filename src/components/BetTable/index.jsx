@@ -319,7 +319,7 @@ export default function BetTable({
                                         {bet.state === STATE_DISPUTED
                                             &&
                                             <div>
-                                                <a href={"https://court.kleros.io/cases/" + bet.disputeID} target="_blank">In arbitration</a>
+                                                <a href={"https://court.kleros.io/cases/" + bet.disputeID} target="_blank" ref="noreferrer">In arbitration</a>
                                             </div>
                                         }
 
