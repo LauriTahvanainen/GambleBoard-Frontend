@@ -1,5 +1,7 @@
 # GambleBoard Front-end
 
+GambleBoard documentation can be found [here](https://github.com/LauriTahvanainen/GambleBoard) in the backend repository.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
