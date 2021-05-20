@@ -110,12 +110,12 @@ export default function BetTable({
                                 <td>
                                     <div>
                                         <span className="name d-block">
-                                            <a href={'https://etherscan.io/address/' + bet.creator}>
+                                            <a href={'https://etherscan.io/address/' + bet.creator} rel="noreferrer">
                                                 {bet.creator.slice(0, 5) + '...' + bet.creator.slice(-3, bet.creator.length)}
                                                 {bet.creator === account && '(You)'}
                                             </a> <div>----------</div> {bet.backer === "0x0000000000000000000000000000000000000000" && "Open!"}
                                             {bet.backer !== "0x0000000000000000000000000000000000000000" &&
-                                                <a href={'https://etherscan.io/address/' + bet.backer}>
+                                                <a href={'https://etherscan.io/address/' + bet.backer} rel="noreferrer">
                                                     {bet.backer.slice(0, 5) + '...' + bet.backer.slice(-3, bet.backer.length)}
                                                     {bet.backer === account && '(You)'}
                                                 </a>}
@@ -324,7 +324,7 @@ export default function BetTable({
                                         }
 
                                         {(bet.state === STATE_DISPUTED
-                                            && ((bet.creator == account && !bet.creatorProvidedEvidence) || (bet.backer === account && !bet.backerProvidedEvidence)))
+                                            && ((bet.creator === account && !bet.creatorProvidedEvidence) || (bet.backer === account && !bet.backerProvidedEvidence)))
                                             &&
                                             <div>
                                                 <button id="submitEvidence" onClick={() => handleOpenEvidenceModal(bet.id)} className="btn btn-light btn-block">
@@ -334,7 +334,7 @@ export default function BetTable({
                                         }
 
                                         {(bet.state === STATE_DISPUTED
-                                            && ((bet.creator == account && bet.creatorProvidedEvidence) || (bet.backer === account && bet.backerProvidedEvidence)))
+                                            && ((bet.creator === account && bet.creatorProvidedEvidence) || (bet.backer === account && bet.backerProvidedEvidence)))
                                             &&
                                             <div>
                                                 <span>You have provided evidence</span>

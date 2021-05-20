@@ -137,12 +137,7 @@ export default function CreateBet({ web3, betContract, account, filters, setFilt
     setCreating(false);
     setError(true);
   }
-
-  const handleCreateNew = () => {
-    handleCloseModal();
-    //formikForm.resetForm(); //player might want to create a bet on same event so don't reset form.
-  }
-
+  
   const formikForm = useFormik({
     initialValues,
     onSubmit,

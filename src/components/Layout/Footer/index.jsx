@@ -20,7 +20,7 @@ export default function index() {
               <div className="row">
 
                 <div className="col">
-                  <a href="https://thegraph.com/"  target="_blank" rel="noreferer">
+                  <a href="https://thegraph.com/"  target="_blank" rel="noreferrer">
                     <img
                       className="img-fluid"
                       src={graphLogo}
@@ -30,7 +30,7 @@ export default function index() {
                 </div>
 
                 <div className="col">
-                  <a href="https://kleros.io/" target="_blank" rel="noreferer">
+                  <a href="https://kleros.io/" target="_blank" rel="noreferrer">
                     <img
                       className="img-fluid"
                       src={klerosLogo}
