@@ -210,7 +210,7 @@ export default function BetTable({
                                         {(bet.state === STATE_OPEN
                                             && bet.stakingDeadline > new Date().getTime() / 1000
                                             && bet.creator !== account) &&
-                                            <button id="backBet" onClick={() => backBetHandler(bet.id, bet.backerStake)} className="btn btn-info btn-block">
+                                            <button id="backBet" onClick={() => backBetHandler(bet.id, bet.backerStake)} className="btn btn-primary btn-block">
                                                 Back Bet
                                         </button>}
 
